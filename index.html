@@ -4,7 +4,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>成都多牛互动传媒有限公司</title>
+  <title>成语乐消消</title>
   <link rel="stylesheet" href="./game_files/reset.css">
   <link rel="stylesheet" href="./game_files/swiper.min.css">
   <link rel="stylesheet" href="./game_files/index1.css">
@@ -104,10 +104,12 @@
     </div>
     <div class="footer">
       <div class="cen">
+	  <!--
         <p>公司：成都鹰飞尼特斯网络技术有限公司</p>
         <p>地址：成都高新区交子大道233号1栋1单元1308号</p>
         <p>客服：18108161860</p>
         <p>备案号：蜀ICP备2021024644号-3</p>
+		!-->
       </div>
     </div>
   </div>
@@ -133,28 +135,7 @@
           }
         }
       }
-      console.log(logo)
-      if(logo==='6') {
-        $('.jiankangz').addClass('index1Bg')
-        $('.mark').css('display','none');
-        $('.tab span').eq(2).css('display','block');
-        $('.title img').attr('src', './images/logo6.jpg');
-        $('.title i').html('狗子的反击')
-        $('.title p').html('')
-        $('.mainText h4').eq(0).html('')
-        $('.mainText .w260').eq(0).html('《狗子的反击》是一款动作类的休闲游戏，让你感受快速出招、以一敌百的战斗爽快感。搞笑、夸张的风格，以动物为主角，学习绝世武学，挑战各路高手。通过闯关获得各种资源用于强化自身的战斗力，不断历练成绝世高手。')
-        let logo1Tab = ['宣传图1','宣传图2','宣传图3','宣传图4','宣传图5']
-        let logo1Text = ['单手闯关，爽快战斗！','武功秘籍，自由组合！','稀世装备，闯关加持！','酷炫大招，突出重围！','连续出招，以一敌百！']
-        for(let tab1=0;tab1<logo1Tab.length;tab1++) {
-          $('.list h4').eq(tab1).html(logo1Tab[tab1])
-          $('.tab span').eq(tab1).html(logo1Tab[tab1])
-          $('.list .item p').eq(tab1).html(logo1Text[tab1]);
-          $('.list .item img').eq(tab1).attr('src', './images/silder6-'+(tab1+1)+'.jpg');
-        }
-        for(let a=0;a<6;a++) {
-          $('.swiper-container .swiper-slide').eq(a).html('<img src="./images/silder6-'+(a+1)+'.jpg" alt="">');
-        }
-      }
+      
       if(logo==='10') {
         // $('.jiankangz').addClass('index1Bg')
         $('.mark').css('display','none');
@@ -174,25 +155,6 @@
         }
         for(let a=0;a<6;a++) {
           $('.swiper-container .swiper-slide').eq(a).html('<img src="./images/silder7-'+(a+1)+'.png" alt="">');
-        }
-      }
-      if(logo==='3') {
-        $('.tab span').eq(2).css('display','block');
-        $('.title img').attr('src', './images/logo3.png');
-        $('.title i').html('精灵的果园')
-        $('.title p').html('')
-        $('.mainText h4').eq(0).html('')
-        $('.mainText .w260').eq(0).html('《精灵的果园》是一款简单的经营类小游戏，不断的改进培育果树的方式，提高果树的品质，吸引更多的顾客购买果实，从而提升果园的整体收益！建立属于自己的私人果园，体验种植的乐趣，你还在等什么，赶快来打造属于自己的精灵果园！')
-        let logo3Tab = ['宣传图1','宣传图2','宣传图3','宣传图4','宣传图5']
-        let logo3Text = ['休闲经营，种植养家！','可可爱爱，治愈萌物！','梦想果园，等你来建！','操作简单，乐趣无穷！','良心之作，好评不断！']
-        for(let tab3=0;tab3<logo3Tab.length;tab3++) {
-          $('.list h4').eq(tab3).html('')
-          $('.tab span').eq(tab3).html(logo3Tab[tab3])
-          $('.list .item p').eq(tab3).html(logo3Text[tab3]);
-          $('.list .item img').eq(tab3).attr('src', './images/silder2-'+(tab3+1)+'.png');
-        }
-        for(let i=0;i<6;i++) {
-          $('.swiper-container .swiper-slide').eq(i).html('<img src="./images/silder2-'+(i+1)+'.png" alt="">');
         }
       }
       var swiper = new Swiper('.swiper-container', {
